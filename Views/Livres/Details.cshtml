@@ -1,0 +1,90 @@
+﻿@model Biblio.Livre
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Livre</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.auteur.nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.auteur.nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.theme.titre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.theme.titre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.titre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.titre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.prix)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prix)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.quantite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.quantite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.poids)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.poids)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.langue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.langue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.datepublication)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.datepublication)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LivreId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
